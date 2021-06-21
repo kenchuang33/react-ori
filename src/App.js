@@ -97,11 +97,11 @@ const [user,setUser]=useState(null)
 
         <Switch>
           
-          <Route exact path='/home'>
+          <Route exact path='/'>
           {user?<Home/>:<Signin/>}
           </Route> 
 
-          <Route exact path="/">
+          <Route exact path="/products">
             <Products products={products} onAddToCart={handleAddToCart} />
           </Route>
 

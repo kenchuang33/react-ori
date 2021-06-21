@@ -32,7 +32,7 @@ const Navbar = ({ totalItems }) => {
         <div>
             <AppBar position="fixed" className={classes.appBar} color="inherit">
                 <Toolbar>
-                    <Typography component={Link} to="/home" variant="h6" className={classes.title} color="inherit" onClick={closeMobileMenu}>
+                    <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit" onClick={closeMobileMenu}>
                         {/* <img src={logo} alt="Commerce.js" height="25px" className={classes.image} /> */}
                         台東觀光民宿
                     </Typography>
@@ -42,7 +42,7 @@ const Navbar = ({ totalItems }) => {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Typography component={Link} to="/" className='nav-links' onClick={closeMobileMenu}>
+                            <Typography component={Link} to="/products" className='nav-links' onClick={closeMobileMenu}>
                                 民宿分類
                             </Typography>
                         </li> 
